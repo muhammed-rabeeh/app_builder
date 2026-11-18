@@ -27,9 +27,11 @@ Generated files are saved to `generated_project/` and served locally via Python'
 # Install dependencies
 uv sync
 
-# Add your Groq API key
-echo GROQ_API_KEY=your_key_here > .env
+# Add your Groq API key (copy the template, then edit .env)
+cp .env.example .env
 ```
+
+`.env` is listed in `.gitignore`, so your key stays out of git. Never commit it.
 
 ## Run
 
